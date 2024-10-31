@@ -14,7 +14,6 @@ prisma.$on("query", (e) => {
   console.log("Duration: ", e.duration, " ms");
   console.log("Date & Time: ", e.timestamp);
 });
-
 const main = async () => {
   const getAllFromDB = await prisma.post.findMany();
   //console.log(getAllFromDB)
